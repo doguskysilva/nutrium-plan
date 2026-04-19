@@ -7,6 +7,8 @@ Static JSON plan host for Nutrium.
 - `Dockerfile` - serves `plan.json` through nginx
 
 ## URL
-After deploy, use:
+Production URL:
 
-`https://<your-domain>/plan.json`
+`https://nutrium.dogusky.cloud/plan.json`
+
+After deploy, this endpoint should return the current plan JSON used by the app.
