@@ -4,6 +4,449 @@
   "id": "plan_douglas_2026_itsvida",
   "name": "Plano Alimentar - Douglas",
   "updatedAt": "2026-04-19",
-  "meals": [],
-  "substitutionGroups": []
+  "meals": [
+    {
+      "id": "meal_cafe_manha",
+      "name": "Café da manhã",
+      "order": 0,
+      "startHour": 7,
+      "endHour": 9,
+      "items": [
+        {
+          "id": "item_cafe_bebida",
+          "order": 0,
+          "label": "Bebida",
+          "displayName": "Bebida da sua preferência (sem açúcar)",
+          "displayQuantity": "1 xícara (200ml)",
+          "isUnlimited": false,
+          "groupId": null
+        },
+        {
+          "id": "item_cafe_pao",
+          "order": 1,
+          "label": "Base",
+          "displayName": "Pão de forma integral OU pão francês",
+          "displayQuantity": "2 fatias OU 1 unidade",
+          "isUnlimited": false,
+          "groupId": "lista_04"
+        },
+        {
+          "id": "item_cafe_pasta",
+          "order": 2,
+          "label": "Pasta",
+          "displayName": "Creme de ricota OU requeijão light",
+          "displayQuantity": "1 colher de chá rasa",
+          "isUnlimited": false,
+          "groupId": "lista_10"
+        },
+        {
+          "id": "item_cafe_proteina",
+          "order": 3,
+          "label": "Proteína",
+          "displayName": "Ovo mexido OU queijo minas",
+          "displayQuantity": "2 unidades / 2 fatias",
+          "isUnlimited": false,
+          "groupId": "lista_01"
+        }
+      ]
+    },
+    {
+      "id": "meal_lanche_manha",
+      "name": "Lanche da manhã",
+      "order": 1,
+      "startHour": 10,
+      "endHour": 11,
+      "items": [
+        {
+          "id": "item_lanche_manha_fruta",
+          "order": 0,
+          "label": "Fruta",
+          "displayName": "Fruta",
+          "displayQuantity": "1 unidade",
+          "isUnlimited": false,
+          "groupId": "lista_03"
+        },
+        {
+          "id": "item_lanche_manha_cereal",
+          "order": 1,
+          "label": "Cereal",
+          "displayName": "Aveia",
+          "displayQuantity": "2 colheres de sopa",
+          "isUnlimited": false,
+          "groupId": "lista_04"
+        }
+      ]
+    },
+    {
+      "id": "meal_almoco",
+      "name": "Almoço",
+      "order": 2,
+      "startHour": 12,
+      "endHour": 14,
+      "items": [
+        {
+          "id": "item_almoco_salada",
+          "order": 0,
+          "label": "Salada",
+          "displayName": "Salada de folhas, tomate, cenoura + azeite",
+          "displayQuantity": "À vontade",
+          "isUnlimited": true,
+          "groupId": "lista_07"
+        },
+        {
+          "id": "item_almoco_legumes",
+          "order": 1,
+          "label": "Legumes",
+          "displayName": "Legumes cozidos no vapor/refogados/assados",
+          "displayQuantity": "3 colheres de servir cheias (100-150g)",
+          "isUnlimited": false,
+          "groupId": "lista_08"
+        },
+        {
+          "id": "item_almoco_carboidrato",
+          "order": 2,
+          "label": "Carboidrato",
+          "displayName": "Arroz branco/integral OU batata cozida",
+          "displayQuantity": "5 colheres de sopa (100g) / 200g",
+          "isUnlimited": false,
+          "groupId": "lista_06"
+        },
+        {
+          "id": "item_almoco_leguminosa",
+          "order": 3,
+          "label": "Leguminosa",
+          "displayName": "Feijão",
+          "displayQuantity": "1 concha grande (100g)",
+          "isUnlimited": false,
+          "groupId": "lista_02"
+        },
+        {
+          "id": "item_almoco_proteina",
+          "order": 4,
+          "label": "Proteína",
+          "displayName": "Filé de frango OU bife bovino",
+          "displayQuantity": "1 filé grande (130g)",
+          "isUnlimited": false,
+          "groupId": "lista_01"
+        },
+        {
+          "id": "item_almoco_sobremesa",
+          "order": 5,
+          "label": "Sobremesa",
+          "displayName": "Laranja OU abacaxi",
+          "displayQuantity": "1 unidade / 2 fatias",
+          "isUnlimited": false,
+          "groupId": "lista_03"
+        }
+      ]
+    },
+    {
+      "id": "meal_lanche_tarde",
+      "name": "Lanche da tarde",
+      "order": 3,
+      "startHour": 16,
+      "endHour": 18,
+      "items": [
+        {
+          "id": "item_lanche_tarde_iogurte",
+          "order": 0,
+          "label": "Lácteo",
+          "displayName": "Iogurte natural desnatado OU iogurte grego light",
+          "displayQuantity": "1 pote (160g)",
+          "isUnlimited": false,
+          "groupId": "lista_05"
+        },
+        {
+          "id": "item_lanche_tarde_fruta",
+          "order": 1,
+          "label": "Fruta",
+          "displayName": "Fruta",
+          "displayQuantity": "1 unidade",
+          "isUnlimited": false,
+          "groupId": "lista_03"
+        },
+        {
+          "id": "item_lanche_tarde_cereal",
+          "order": 2,
+          "label": "Cereal",
+          "displayName": "Aveia OU granola",
+          "displayQuantity": "1 colher de sopa",
+          "isUnlimited": false,
+          "groupId": "lista_04"
+        },
+        {
+          "id": "item_lanche_tarde_whey",
+          "order": 3,
+          "label": "Suplemento",
+          "displayName": "Whey protein",
+          "displayQuantity": "1 dose",
+          "isUnlimited": false,
+          "groupId": null
+        }
+      ]
+    },
+    {
+      "id": "meal_jantar",
+      "name": "Jantar",
+      "order": 4,
+      "startHour": 19,
+      "endHour": 22,
+      "items": [
+        {
+          "id": "item_jantar_salada",
+          "order": 0,
+          "label": "Salada",
+          "displayName": "Salada de folhas, tomate, cenoura + azeite",
+          "displayQuantity": "À vontade",
+          "isUnlimited": true,
+          "groupId": "lista_07"
+        },
+        {
+          "id": "item_jantar_legumes",
+          "order": 1,
+          "label": "Legumes",
+          "displayName": "Legumes cozidos no vapor/refogados/assados",
+          "displayQuantity": "3 colheres de servir cheias (100-150g)",
+          "isUnlimited": false,
+          "groupId": "lista_08"
+        },
+        {
+          "id": "item_jantar_carboidrato",
+          "order": 2,
+          "label": "Carboidrato",
+          "displayName": "Arroz branco/integral OU batata cozida",
+          "displayQuantity": "5 colheres de sopa (100g) / 200g",
+          "isUnlimited": false,
+          "groupId": "lista_06"
+        },
+        {
+          "id": "item_jantar_leguminosa",
+          "order": 3,
+          "label": "Leguminosa",
+          "displayName": "Feijão/Lentilha/Grão de bico",
+          "displayQuantity": "4 colheres de sopa (100g)",
+          "isUnlimited": false,
+          "groupId": "lista_02"
+        },
+        {
+          "id": "item_jantar_proteina",
+          "order": 4,
+          "label": "Proteína",
+          "displayName": "Filé de frango grelhado OU carne moída OU ovos",
+          "displayQuantity": "120g ou 3 ovos",
+          "isUnlimited": false,
+          "groupId": "lista_01"
+        },
+        {
+          "id": "item_jantar_sobremesa",
+          "order": 5,
+          "label": "Sobremesa",
+          "displayName": "Fruta de sobremesa ou gelatina zero",
+          "displayQuantity": "1 unidade",
+          "isUnlimited": false,
+          "groupId": "lista_03"
+        }
+      ]
+    }
+  ],
+  "substitutionGroups": [
+    {
+      "id": "lista_01",
+      "listNumber": 1,
+      "name": "Lista 01 - Carnes e ovos",
+      "portions": [
+        { "id": "food_l01_carne_magra_cozida", "foodName": "Carne magra cozida", "quantity": "5 colheres de sopa cheias (120g)" },
+        { "id": "food_l01_file_frango_grelhado", "foodName": "Filé de frango grelhado", "quantity": "1 filé médio (130g)" },
+        { "id": "food_l01_carne_moida_refogada", "foodName": "Carne moída refogada", "quantity": "5 colheres de sopa cheias (100g)" },
+        { "id": "food_l01_frango_desfiado", "foodName": "Frango desfiado", "quantity": "5 colheres de sopa cheias (120g)" },
+        { "id": "food_l01_carne_magra_grelhada", "foodName": "Carne magra grelhada", "quantity": "1 bife médio (110g)" },
+        { "id": "food_l01_coxa_sobrecoxa_assada_sem_pele", "foodName": "Coxa ou sobrecoxa de frango assada (sem pele)", "quantity": "1 unidade média (90g)" },
+        { "id": "food_l01_peixe_cozido", "foodName": "Peixe cozido (ensopado)", "quantity": "1 posta pequena (140g)" },
+        { "id": "food_l01_peixe_grelhado_ou_assado", "foodName": "Peixe grelhado ou assado", "quantity": "1 filé médio (120g)" },
+        { "id": "food_l01_ovo_mexido_ou_cozido", "foodName": "Ovo mexido ou cozido", "quantity": "1 unidade" },
+        { "id": "food_l01_sashimi", "foodName": "Sashimi de salmão, atum ou peixe branco", "quantity": "10 unidades" },
+        { "id": "food_l01_omelete_simples", "foodName": "Omelete simples", "quantity": "3 claras e 1 gema" }
+      ]
+    },
+    {
+      "id": "lista_02",
+      "listNumber": 2,
+      "name": "Lista 02 - Leguminosas",
+      "portions": [
+        { "id": "food_l02_feijao_carioca_cozido", "foodName": "Feijão carioca cozido", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_lentilha_cozida", "foodName": "Lentilha cozida", "quantity": "5 colheres de sopa" },
+        { "id": "food_l02_feijao_branco_cozido", "foodName": "Feijão branco cozido", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_grao_de_bico_cozido", "foodName": "Grão de bico cozido", "quantity": "4 colheres de sopa" },
+        { "id": "food_l02_feijao_preto_cozido", "foodName": "Feijão preto cozido", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_ervilha_seca_cozida", "foodName": "Ervilha seca cozida", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_feijao_fradinho_cozido", "foodName": "Feijão fradinho cozido", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_ervilha_fresca", "foodName": "Ervilha fresca", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l02_edamame_cozido", "foodName": "Edamame cozido", "quantity": "2 colheres de sopa" },
+        { "id": "food_l02_soja_em_graos_cozida", "foodName": "Soja em grãos cozida", "quantity": "2 colheres de sopa cheia" },
+        { "id": "food_l02_fava_cozida", "foodName": "Fava cozida", "quantity": "1 colher de sopa cheia" }
+      ]
+    },
+    {
+      "id": "lista_03",
+      "listNumber": 3,
+      "name": "Lista 03 - Frutas",
+      "portions": [
+        { "id": "food_l03_manga", "foodName": "Manga", "quantity": "1/2 unidade média" },
+        { "id": "food_l03_uva_italia", "foodName": "Uva itália", "quantity": "1/2 cacho pequeno" },
+        { "id": "food_l03_ameixa_fresca", "foodName": "Ameixa fresca", "quantity": "1 unidade grande" },
+        { "id": "food_l03_abacaxi", "foodName": "Abacaxi", "quantity": "1 fatia média" },
+        { "id": "food_l03_mamao_papaia", "foodName": "Mamão papaia", "quantity": "1/2 unidade média" },
+        { "id": "food_l03_mexerica", "foodName": "Mexerica", "quantity": "1 unidade" },
+        { "id": "food_l03_melancia", "foodName": "Melancia", "quantity": "1 fatia média" },
+        { "id": "food_l03_melao", "foodName": "Melão", "quantity": "1 fatia grande" },
+        { "id": "food_l03_pera", "foodName": "Pêra", "quantity": "1 unidade" },
+        { "id": "food_l03_morango", "foodName": "Morango", "quantity": "5 unidades grandes" },
+        { "id": "food_l03_maca", "foodName": "Maçã", "quantity": "1 unidade pequena" },
+        { "id": "food_l03_goiaba", "foodName": "Goiaba", "quantity": "1 unidade pequena" },
+        { "id": "food_l03_banana", "foodName": "Banana", "quantity": "1 unidade" },
+        { "id": "food_l03_pessego", "foodName": "Pêssego", "quantity": "1 unidade grande" },
+        { "id": "food_l03_abacate", "foodName": "Abacate", "quantity": "2 colheres de sopa" },
+        { "id": "food_l03_kiwi", "foodName": "Kiwi", "quantity": "1 unidade média" },
+        { "id": "food_l03_laranja", "foodName": "Laranja", "quantity": "1 unidade média" },
+        { "id": "food_l03_caqui", "foodName": "Caqui", "quantity": "1 unidade pequena" }
+      ]
+    },
+    {
+      "id": "lista_04",
+      "listNumber": 4,
+      "name": "Lista 04 - Pães e cereais",
+      "portions": [
+        { "id": "food_l04_pao_frances", "foodName": "Pão francês", "quantity": "1 unidade" },
+        { "id": "food_l04_pao_frances_integral", "foodName": "Pão francês integral", "quantity": "1 unidade" },
+        { "id": "food_l04_pao_forma", "foodName": "Pão de forma", "quantity": "2 fatias" },
+        { "id": "food_l04_pao_forma_integral", "foodName": "Pão de forma integral", "quantity": "2 fatias" },
+        { "id": "food_l04_pao_sirio", "foodName": "Pão sírio", "quantity": "1 unidade" },
+        { "id": "food_l04_torrada_integral", "foodName": "Torrada integral", "quantity": "3 unidades" },
+        { "id": "food_l04_rap10", "foodName": "Pão tipo tortilha (Rap10)", "quantity": "1 fatia" },
+        { "id": "food_l04_torrada_toast", "foodName": "Torrada tipo toast", "quantity": "7 unidades" },
+        { "id": "food_l04_tapioca", "foodName": "Tapioca", "quantity": "4 colheres de sopa rasas" },
+        { "id": "food_l04_biscoito_arroz", "foodName": "Biscoito de arroz", "quantity": "13 unidades" },
+        { "id": "food_l04_aveia_flocos", "foodName": "Aveia em flocos", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l04_granola_sem_acucar", "foodName": "Granola sem açúcar", "quantity": "2 colheres de sopa" },
+        { "id": "food_l04_farelo_aveia", "foodName": "Farelo de aveia", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l04_milho_pipoca_cru", "foodName": "Milho para pipoca (cru)", "quantity": "2 colheres de sopa cheias" }
+      ]
+    },
+    {
+      "id": "lista_05",
+      "listNumber": 5,
+      "name": "Lista 05 - Leite e substitutos",
+      "portions": [
+        { "id": "food_l05_leite_integral", "foodName": "Leite integral", "quantity": "1 copo americano (200ml)" },
+        { "id": "food_l05_leite_desnatado", "foodName": "Leite desnatado", "quantity": "1 copo grande (300ml)" },
+        { "id": "food_l05_iogurte_natural_integral", "foodName": "Iogurte natural integral", "quantity": "1 unidade (170g)" },
+        { "id": "food_l05_iogurte_natural_desnatado", "foodName": "Iogurte natural desnatado", "quantity": "1 unidade (170g)" },
+        { "id": "food_l05_iogurte_grego_light", "foodName": "Iogurte grego light", "quantity": "1 unidade" },
+        { "id": "food_l05_iogurte_frutas_light", "foodName": "Iogurte de frutas light", "quantity": "1 unidade" },
+        { "id": "food_l05_iogurte_proteico", "foodName": "Iogurte proteico (>10g proteína)", "quantity": "1 unidade (250ml)" },
+        { "id": "food_l05_queijo_minas", "foodName": "Queijo minas", "quantity": "2 fatias finas (40g)" },
+        { "id": "food_l05_queijo_mucarela", "foodName": "Queijo tipo muçarela", "quantity": "2 fatias finas" },
+        { "id": "food_l05_queijo_cottage", "foodName": "Queijo tipo cottage", "quantity": "4 colheres de sopa" },
+        { "id": "food_l05_ricota", "foodName": "Ricota", "quantity": "2 fatias médias" },
+        { "id": "food_l05_creme_ricota", "foodName": "Creme de ricota", "quantity": "2 colheres de sopa" },
+        { "id": "food_l05_requeijao_cremoso", "foodName": "Requeijão cremoso", "quantity": "1 colher de sopa" },
+        { "id": "food_l05_requeijao_light", "foodName": "Requeijão light", "quantity": "1 colher de sopa cheia" }
+      ]
+    },
+    {
+      "id": "lista_06",
+      "listNumber": 6,
+      "name": "Lista 06 - Cereais, massas e tubérculos",
+      "portions": [
+        { "id": "food_l06_arroz_integral", "foodName": "Arroz integral", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l06_arroz_branco", "foodName": "Arroz branco", "quantity": "5 colheres de sopa cheias" },
+        { "id": "food_l06_quinoa", "foodName": "Quinoa", "quantity": "3-4 colheres de sopa cheias" },
+        { "id": "food_l06_amaranto", "foodName": "Amaranto", "quantity": "4 colheres de sopa cheias" },
+        { "id": "food_l06_macarrao", "foodName": "Macarrão", "quantity": "1 escumadeira média" },
+        { "id": "food_l06_macarrao_integral", "foodName": "Macarrão integral", "quantity": "1 escumadeira média" },
+        { "id": "food_l06_batata_cozida", "foodName": "Batata cozida", "quantity": "4 colheres de sopa cheias" },
+        { "id": "food_l06_pure_batata", "foodName": "Purê de batata", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l06_mandioquinha_cozida", "foodName": "Mandioquinha cozida", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l06_mandioca_cozida", "foodName": "Mandioca cozida", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l06_inhame_cozido", "foodName": "Inhame cozido", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l06_batata_doce_cozida", "foodName": "Batata doce cozida", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l06_milho_cozido_refogado", "foodName": "Milho cozido ou refogado", "quantity": "1 espiga média ou 3 colheres de sopa" },
+        { "id": "food_l06_polenta", "foodName": "Polenta", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l06_cuscuz", "foodName": "Cuscuz", "quantity": "3 colheres de sopa cheias" }
+      ]
+    },
+    {
+      "id": "lista_07",
+      "listNumber": 7,
+      "name": "Lista 07 - Verduras",
+      "portions": [
+        { "id": "food_l07_alface_lisa_crespa", "foodName": "Alface lisa/crespa", "quantity": "À vontade" },
+        { "id": "food_l07_rucula", "foodName": "Rúcula", "quantity": "À vontade" },
+        { "id": "food_l07_alface_americana", "foodName": "Alface americana", "quantity": "À vontade" },
+        { "id": "food_l07_agriao", "foodName": "Agrião", "quantity": "À vontade" },
+        { "id": "food_l07_acelga", "foodName": "Acelga", "quantity": "À vontade" },
+        { "id": "food_l07_escarola_refogada", "foodName": "Escarola refogada", "quantity": "3 colheres de sopa" },
+        { "id": "food_l07_repolho_cru", "foodName": "Repolho cru", "quantity": "À vontade" },
+        { "id": "food_l07_repolho_refogado", "foodName": "Repolho refogado", "quantity": "3 colheres de sopa" },
+        { "id": "food_l07_couve_crua", "foodName": "Couve crua", "quantity": "À vontade" },
+        { "id": "food_l07_couve_refogada", "foodName": "Couve refogada", "quantity": "2 colheres de sopa" },
+        { "id": "food_l07_espinafre_refogado", "foodName": "Espinafre refogado", "quantity": "2 colheres de sopa" }
+      ]
+    },
+    {
+      "id": "lista_08",
+      "listNumber": 8,
+      "name": "Lista 08 - Legumes",
+      "portions": [
+        { "id": "food_l08_cenoura_crua_ralada", "foodName": "Cenoura crua ralada", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l08_beterraba_crua_ralada", "foodName": "Beterraba crua ralada", "quantity": "1 colher de sopa cheia" },
+        { "id": "food_l08_rabanete", "foodName": "Rabanete", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l08_pepino", "foodName": "Pepino", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_tomate", "foodName": "Tomate", "quantity": "2 fatias médias" },
+        { "id": "food_l08_tomate_cereja", "foodName": "Tomate cereja", "quantity": "4 unidades" },
+        { "id": "food_l08_palmito", "foodName": "Palmito", "quantity": "1 unidade" },
+        { "id": "food_l08_abobora_refogada", "foodName": "Abóbora refogada", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l08_brocolis_refogado", "foodName": "Brócolis refogado", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_abobrinha_refogada", "foodName": "Abobrinha refogada", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_couve_flor", "foodName": "Couve-flor", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_chuchu", "foodName": "Chuchu", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_quiabo", "foodName": "Quiabo", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_aspargos", "foodName": "Aspargos", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_berinjela", "foodName": "Berinjela", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_cenoura_cozida", "foodName": "Cenoura cozida", "quantity": "3 colheres de sopa cheias" },
+        { "id": "food_l08_beterraba_cozida", "foodName": "Beterraba cozida", "quantity": "2 colheres de sopa cheias" },
+        { "id": "food_l08_jilo_cozido", "foodName": "Jiló cozido", "quantity": "2 colheres de sopa" }
+      ]
+    },
+    {
+      "id": "lista_09",
+      "listNumber": 9,
+      "name": "Lista 09 - Oleaginosas e sementes",
+      "portions": [
+        { "id": "food_l09_castanha_para", "foodName": "Castanha-do-pará", "quantity": "2 unidades" },
+        { "id": "food_l09_castanha_caju", "foodName": "Castanha-de-caju", "quantity": "3 unidades" },
+        { "id": "food_l09_amendoa", "foodName": "Amêndoa", "quantity": "6 unidades" },
+        { "id": "food_l09_noz", "foodName": "Noz", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l09_amendoim", "foodName": "Amendoim", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l09_pasta_amendoim", "foodName": "Pasta de amendoim", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l09_chia", "foodName": "Chia", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l09_linhaca", "foodName": "Linhaça", "quantity": "1 colher de sobremesa" }
+      ]
+    },
+    {
+      "id": "lista_10",
+      "listNumber": 10,
+      "name": "Lista 10 - Pastas e patês",
+      "portions": [
+        { "id": "food_l10_pate_alho", "foodName": "Patê de alho", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l10_pate_atum", "foodName": "Patê de atum", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l10_pasta_amendoim", "foodName": "Pasta de amendoim", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l10_geleia_sem_acucar", "foodName": "Geléia de frutas sem açúcar", "quantity": "1 colher de sopa" },
+        { "id": "food_l10_creme_ricota", "foodName": "Creme de ricota", "quantity": "1 colher de sopa" },
+        { "id": "food_l10_requeijao", "foodName": "Requeijão", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l10_homus", "foodName": "Homus", "quantity": "1 colher de sobremesa" },
+        { "id": "food_l10_manteiga", "foodName": "Manteiga", "quantity": "1 colher de sobremesa" }
+      ]
+    }
+  ]
 }
