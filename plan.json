@@ -9,7 +9,7 @@
       "id": "meal_cafe_manha",
       "name": "Café da manhã",
       "order": 0,
-      "startHour": 7,
+      "startHour": 6,
       "endHour": 9,
       "items": [
         {
@@ -54,7 +54,7 @@
       "id": "meal_lanche_manha",
       "name": "Lanche da manhã",
       "order": 1,
-      "startHour": 10,
+      "startHour": 9,
       "endHour": 11,
       "items": [
         {
@@ -81,7 +81,7 @@
       "id": "meal_almoco",
       "name": "Almoço",
       "order": 2,
-      "startHour": 12,
+      "startHour": 11,
       "endHour": 14,
       "items": [
         {
@@ -144,7 +144,7 @@
       "id": "meal_lanche_tarde",
       "name": "Lanche da tarde",
       "order": 3,
-      "startHour": 16,
+      "startHour": 14,
       "endHour": 18,
       "items": [
         {
@@ -189,7 +189,7 @@
       "id": "meal_jantar",
       "name": "Jantar",
       "order": 4,
-      "startHour": 19,
+      "startHour": 18,
       "endHour": 22,
       "items": [
         {
