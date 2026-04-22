@@ -47,6 +47,15 @@
           "displayQuantity": "2 unidades / 2 fatias",
           "isUnlimited": false,
           "groupId": "lista_01"
+        },
+        {
+          "id": "item_cafe_fruta_cereal",
+          "order": 4,
+          "label": "Fruta + Cereal",
+          "displayName": "Fruta + aveia",
+          "displayQuantity": "1 unidade + 2 colheres de sopa",
+          "isUnlimited": false,
+          "groupId": "lista_03"
         }
       ]
     },
@@ -58,22 +67,13 @@
       "endHour": 11,
       "items": [
         {
-          "id": "item_lanche_manha_fruta",
+          "id": "item_lanche_manha_iogurte",
           "order": 0,
-          "label": "Fruta",
-          "displayName": "Fruta",
+          "label": "Lanche",
+          "displayName": "Iogurte com aveia OU 1 fruta",
           "displayQuantity": "1 unidade",
           "isUnlimited": false,
-          "groupId": "lista_03"
-        },
-        {
-          "id": "item_lanche_manha_cereal",
-          "order": 1,
-          "label": "Cereal",
-          "displayName": "Aveia",
-          "displayQuantity": "2 colheres de sopa",
-          "isUnlimited": false,
-          "groupId": "lista_04"
+          "groupId": "lista_05"
         }
       ]
     },
