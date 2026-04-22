@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "planVersion": 1,
+  "planVersion": 2,
   "id": "plan_douglas_2026_itsvida",
   "name": "Plano Alimentar - Douglas",
-  "updatedAt": "2026-04-19",
+  "updatedAt": "2026-04-22",
   "meals": [
     {
       "id": "meal_cafe_manha",
@@ -57,6 +57,68 @@
           "isUnlimited": false,
           "groupId": "lista_03"
         }
+      ],
+      "recipes": [
+        {
+          "id": "recipe_cafe_suco_01",
+          "order": 0,
+          "title": "Suco — Opção 1",
+          "description": "1 xíc de suco de laranja, 1 fatia de abacaxi, 1 folha pequena de couve e 1 lasca de gengibre."
+        },
+        {
+          "id": "recipe_cafe_suco_02",
+          "order": 1,
+          "title": "Suco — Opção 2",
+          "description": "2 fatias melancia, ½ xíc de água de coco e 1 folha de hortelã."
+        },
+        {
+          "id": "recipe_cafe_suco_03",
+          "order": 2,
+          "title": "Suco — Opção 3",
+          "description": "1 maracujá, 1 fatia média de melão, 4 morangos, 2 folhas de espinafre e 150ml de água."
+        },
+        {
+          "id": "recipe_cafe_suco_04",
+          "order": 3,
+          "title": "Suco — Opção 4",
+          "description": "1 folha de couve, 1 rodela média de abacaxi, 4 folhas de hortelã, 100ml de água."
+        },
+        {
+          "id": "recipe_cafe_suco_05",
+          "order": 4,
+          "title": "Suco — Opção 5",
+          "description": "1 folha de couve, 3 colheres de sopa de polpa de maracujá, ½ cenoura picada, 150ml de água."
+        },
+        {
+          "id": "recipe_cafe_suco_06",
+          "order": 5,
+          "title": "Suco — Opção 6 (suco rosa)",
+          "description": "1 pitaia, 1 kiwi, 1 fatia de abacaxi, ¼ de mamão papaia, 300ml de água.\n\nPreparo: bater os ingredientes no liquidificador por 2-3 minutos. Se preferir, coe e sirva em seguida."
+        },
+        {
+          "id": "recipe_cafe_suco_07",
+          "order": 6,
+          "title": "Suco — Opção 7",
+          "description": "1 pires de brócolis ou espinafre, 1 pires de couve, 1 pires de alface, 4 kiwis, 1 ramo de alecrim, 1 ramo de hortelã.\n\nLiquidificar com pouca água, coar e completar até 2 litros com suco de 2 limões espremidos e diluídos com água, ou suco de 3 laranjas."
+        },
+        {
+          "id": "recipe_cafe_vitamina_01",
+          "order": 7,
+          "title": "Vitamina — Opção 1",
+          "description": "1 banana congelada, ½ fatia de mamão e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_cafe_vitamina_02",
+          "order": 8,
+          "title": "Vitamina — Opção 2",
+          "description": "½ abacate, 1 colher de sopa de aveia e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_cafe_vitamina_03",
+          "order": 9,
+          "title": "Vitamina — Opção 3",
+          "description": "1 banana congelada, 3 morangos, ½ maçã e 200ml de leite de coco.\n\nPreparo: bater os ingredientes no liquidificador.\n\nLeite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
+        }
       ]
     },
     {
@@ -74,6 +136,68 @@
           "displayQuantity": "1 unidade",
           "isUnlimited": false,
           "groupId": "lista_05"
+        }
+      ],
+      "recipes": [
+        {
+          "id": "recipe_lanche_manha_suco_01",
+          "order": 0,
+          "title": "Suco — Opção 1",
+          "description": "1 xíc de suco de laranja, 1 fatia de abacaxi, 1 folha pequena de couve e 1 lasca de gengibre."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_02",
+          "order": 1,
+          "title": "Suco — Opção 2",
+          "description": "2 fatias melancia, ½ xíc de água de coco e 1 folha de hortelã."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_03",
+          "order": 2,
+          "title": "Suco — Opção 3",
+          "description": "1 maracujá, 1 fatia média de melão, 4 morangos, 2 folhas de espinafre e 150ml de água."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_04",
+          "order": 3,
+          "title": "Suco — Opção 4",
+          "description": "1 folha de couve, 1 rodela média de abacaxi, 4 folhas de hortelã, 100ml de água."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_05",
+          "order": 4,
+          "title": "Suco — Opção 5",
+          "description": "1 folha de couve, 3 colheres de sopa de polpa de maracujá, ½ cenoura picada, 150ml de água."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_06",
+          "order": 5,
+          "title": "Suco — Opção 6 (suco rosa)",
+          "description": "1 pitaia, 1 kiwi, 1 fatia de abacaxi, ¼ de mamão papaia, 300ml de água.\n\nPreparo: bater os ingredientes no liquidificador por 2-3 minutos. Se preferir, coe e sirva em seguida."
+        },
+        {
+          "id": "recipe_lanche_manha_suco_07",
+          "order": 6,
+          "title": "Suco — Opção 7",
+          "description": "1 pires de brócolis ou espinafre, 1 pires de couve, 1 pires de alface, 4 kiwis, 1 ramo de alecrim, 1 ramo de hortelã.\n\nLiquidificar com pouca água, coar e completar até 2 litros com suco de 2 limões espremidos e diluídos com água, ou suco de 3 laranjas."
+        },
+        {
+          "id": "recipe_lanche_manha_vitamina_01",
+          "order": 7,
+          "title": "Vitamina — Opção 1",
+          "description": "1 banana congelada, ½ fatia de mamão e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_lanche_manha_vitamina_02",
+          "order": 8,
+          "title": "Vitamina — Opção 2",
+          "description": "½ abacate, 1 colher de sopa de aveia e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_lanche_manha_vitamina_03",
+          "order": 9,
+          "title": "Vitamina — Opção 3",
+          "description": "1 banana congelada, 3 morangos, ½ maçã e 200ml de leite de coco.\n\nPreparo: bater os ingredientes no liquidificador.\n\nLeite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
         }
       ]
     },
@@ -138,7 +262,8 @@
           "isUnlimited": false,
           "groupId": "lista_03"
         }
-      ]
+      ],
+      "recipes": []
     },
     {
       "id": "meal_lanche_tarde",
@@ -182,6 +307,68 @@
           "displayQuantity": "1 dose",
           "isUnlimited": false,
           "groupId": null
+        }
+      ],
+      "recipes": [
+        {
+          "id": "recipe_lanche_tarde_suco_01",
+          "order": 0,
+          "title": "Suco — Opção 1",
+          "description": "1 xíc de suco de laranja, 1 fatia de abacaxi, 1 folha pequena de couve e 1 lasca de gengibre."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_02",
+          "order": 1,
+          "title": "Suco — Opção 2",
+          "description": "2 fatias melancia, ½ xíc de água de coco e 1 folha de hortelã."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_03",
+          "order": 2,
+          "title": "Suco — Opção 3",
+          "description": "1 maracujá, 1 fatia média de melão, 4 morangos, 2 folhas de espinafre e 150ml de água."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_04",
+          "order": 3,
+          "title": "Suco — Opção 4",
+          "description": "1 folha de couve, 1 rodela média de abacaxi, 4 folhas de hortelã, 100ml de água."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_05",
+          "order": 4,
+          "title": "Suco — Opção 5",
+          "description": "1 folha de couve, 3 colheres de sopa de polpa de maracujá, ½ cenoura picada, 150ml de água."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_06",
+          "order": 5,
+          "title": "Suco — Opção 6 (suco rosa)",
+          "description": "1 pitaia, 1 kiwi, 1 fatia de abacaxi, ¼ de mamão papaia, 300ml de água.\n\nPreparo: bater os ingredientes no liquidificador por 2-3 minutos. Se preferir, coe e sirva em seguida."
+        },
+        {
+          "id": "recipe_lanche_tarde_suco_07",
+          "order": 6,
+          "title": "Suco — Opção 7",
+          "description": "1 pires de brócolis ou espinafre, 1 pires de couve, 1 pires de alface, 4 kiwis, 1 ramo de alecrim, 1 ramo de hortelã.\n\nLiquidificar com pouca água, coar e completar até 2 litros com suco de 2 limões espremidos e diluídos com água, ou suco de 3 laranjas."
+        },
+        {
+          "id": "recipe_lanche_tarde_vitamina_01",
+          "order": 7,
+          "title": "Vitamina — Opção 1",
+          "description": "1 banana congelada, ½ fatia de mamão e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_lanche_tarde_vitamina_02",
+          "order": 8,
+          "title": "Vitamina — Opção 2",
+          "description": "½ abacate, 1 colher de sopa de aveia e 200ml de leite desnatado.\n\nPreparo: bater os ingredientes no liquidificador."
+        },
+        {
+          "id": "recipe_lanche_tarde_vitamina_03",
+          "order": 9,
+          "title": "Vitamina — Opção 3",
+          "description": "1 banana congelada, 3 morangos, ½ maçã e 200ml de leite de coco.\n\nPreparo: bater os ingredientes no liquidificador.\n\nLeite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
         }
       ]
     },
@@ -245,6 +432,44 @@
           "displayQuantity": "1 unidade",
           "isUnlimited": false,
           "groupId": "lista_03"
+        }
+      ],
+      "recipes": [
+        {
+          "id": "recipe_jantar_wrap_carne_moida",
+          "order": 0,
+          "title": "Wrap de Carne Moída",
+          "description": "Ingredientes:\n• 1 unidade de rap10®\n• 3 colheres de sopa cheias de carne moída refogada\n• 2 a 3 folhas de alface americana cortadas em tiras\n• 2 fatias de tomate ou pepino\n• ½ cenoura pequena crua ralada\n• Orégano e sal à gosto\n\nEm uma frigideira, grelhe os 2 lados da tortilha até dourar levemente. Coloque em um prato, acrescente os demais ingredientes e enrole o wrap."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_caipira",
+          "order": 1,
+          "title": "Sanduíche Caipira",
+          "description": "Ingredientes:\n• 1 pão francês integral ou 2 fatias de pão de forma integral\n• 4 colheres de sopa cheias de frango desfiado\n• 1 colher de sopa de milho-verde\n• 1 colher de sopa de cenoura ralada\n• 1 colher de chá de salsinha picada\n• 1 colher de sobremesa rasa de requeijão light\n• Folhas de alface americana cortada em tiras\n• 2 fatias de tomate e sal à gosto\n\nMisture os ingredientes, com exceção das folhas de alface. Recheie o sanduíche com a pasta e acrescente alface."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_atum_sardinha",
+          "order": 2,
+          "title": "Sanduíche de Atum ou Sardinha",
+          "description": "Ingredientes:\n• 2 fatias de pão integral\n• 3 colheres de sopa de atum ralado (já escorrido) OU 2 sardinhas de lata (amassar no garfo)\n• 1 colher de sopa de requeijão light\n• Folhas de alface à gosto\n• 2 colheres de sopa de cenoura crua ralada\n• 1 palmito cortado em cubos pequenos\n• Orégano e cebolinha à gosto\n\nMisture os ingredientes, com exceção das folhas de alface. Recheie o sanduíche com a pasta e acrescente alface."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_queijo_branco",
+          "order": 3,
+          "title": "Sanduíche de Queijo Branco",
+          "description": "Ingredientes:\n• 2 fatias de queijo minas\n• 2 fatias de pão de forma integral ou 1 unidade de rap10®\n• 1 colher de sobremesa rasa de molho de mostarda com azeite e mel\n• Folhas de alface à gosto\n• 2 fatias de tomate ou pepino\n• ½ cenoura crua ralada\n• Orégano à gosto\n\nMisture os ingredientes, com exceção das folhas de alface, tomate e queijo. Recheie o sanduíche com a pasta e acrescente alface, tomate e queijo."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_pasta_ovo_legumes",
+          "order": 4,
+          "title": "Sanduíche com Pasta de Ovo e Legumes",
+          "description": "Ingredientes:\n• 1 pão francês integral ou 2 fatias de pão de forma integral\n• 1 ovo cozido descascado\n• 1 colher de sopa de milho-verde\n• 1 colher de sopa de cenoura ralada\n• 1 colher de chá de salsinha picada\n• 1 colher de sobremesa rasa de maionese light\n• Folhas de alface americana cortada em tiras\n• 2 fatias de pepino e sal à gosto\n\nEm uma tigela, amasse o ovo com um garfo, até formar uma pasta. Acrescente os demais ingredientes, com exceção das folhas de alface e o tomate, e misture bem. Recheie o sanduíche com a pasta e acrescente alface e tomate."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_hamburguer_caseiro",
+          "order": 5,
+          "title": "Sanduíche com Hambúrguer Caseiro",
+          "description": "Ingredientes:\n• 2 fatias de pão integral ou 1 pão de hambúrguer\n• 90g hambúrguer de patinho ou acém moído\n• 1 colher de sopa de creme de ricota ou 1 fatia mussarela\n• Folhas de alface e agrião ou rúcula à gosto\n• 3 fatias de tomate"
         }
       ]
     }
