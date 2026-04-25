@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
-  "planVersion": 1,
+  "schemaVersion": 2,
+  "planVersion": 3,
   "id": "plan_douglas_2026_itsvida",
   "name": "Plano Alimentar - Douglas",
-  "updatedAt": "2026-04-19",
+  "updatedAt": "2026-04-24",
   "meals": [
     {
       "id": "meal_cafe_manha",
@@ -11,51 +11,58 @@
       "order": 0,
       "startHour": 6,
       "endHour": 9,
+      "recipeGroupIds": ["recipe_group_sucos", "recipe_group_vitaminas"],
       "items": [
         {
           "id": "item_cafe_bebida",
           "order": 0,
           "label": "Bebida",
-          "displayName": "Bebida da sua preferência (sem açúcar)",
-          "displayQuantity": "1 xícara (200ml)",
           "isUnlimited": false,
-          "groupId": null
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_cafe_bebida", "order": 0, "name": "Bebida da sua preferência (sem açúcar)", "quantity": "1 xícara (200ml)" }
+          ]
         },
         {
           "id": "item_cafe_pao",
           "order": 1,
           "label": "Base",
-          "displayName": "Pão de forma integral OU pão francês",
-          "displayQuantity": "2 fatias OU 1 unidade",
           "isUnlimited": false,
-          "groupId": "lista_04"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_cafe_pao", "order": 0, "portionId": "food_l04_pao_forma_integral" }
+          ]
         },
         {
           "id": "item_cafe_pasta",
           "order": 2,
           "label": "Pasta",
-          "displayName": "Creme de ricota OU requeijão light",
-          "displayQuantity": "1 colher de chá rasa",
           "isUnlimited": false,
-          "groupId": "lista_10"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_cafe_pasta", "order": 0, "portionId": "food_l10_creme_ricota" }
+          ]
         },
         {
           "id": "item_cafe_proteina",
           "order": 3,
           "label": "Proteína",
-          "displayName": "Ovo mexido OU queijo minas",
-          "displayQuantity": "2 unidades / 2 fatias",
           "isUnlimited": false,
-          "groupId": "lista_01"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_cafe_proteina", "order": 0, "portionId": "food_l01_ovo_mexido_ou_cozido" }
+          ]
         },
         {
           "id": "item_cafe_fruta_cereal",
           "order": 4,
           "label": "Fruta + Cereal",
-          "displayName": "Fruta + aveia",
-          "displayQuantity": "1 unidade + 2 colheres de sopa",
           "isUnlimited": false,
-          "groupId": "lista_03"
+          "combinator": "AND",
+          "components": [
+            { "id": "comp_cafe_fruta", "order": 0, "portionId": "food_l03_banana" },
+            { "id": "comp_cafe_aveia", "order": 1, "portionId": "food_l04_aveia_flocos" }
+          ]
         }
       ]
     },
@@ -65,15 +72,27 @@
       "order": 1,
       "startHour": 9,
       "endHour": 11,
+      "recipeGroupIds": ["recipe_group_sucos", "recipe_group_vitaminas"],
       "items": [
         {
-          "id": "item_lanche_manha_iogurte",
+          "id": "item_lanche_manha_fruta",
           "order": 0,
-          "label": "Lanche",
-          "displayName": "Iogurte com aveia OU 1 fruta",
-          "displayQuantity": "1 unidade",
+          "label": "Fruta",
           "isUnlimited": false,
-          "groupId": "lista_05"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_manha_fruta", "order": 0, "portionId": "food_l03_banana" }
+          ]
+        },
+        {
+          "id": "item_lanche_manha_cereal",
+          "order": 1,
+          "label": "Cereal",
+          "isUnlimited": false,
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_manha_cereal", "order": 0, "portionId": "food_l04_aveia_flocos" }
+          ]
         }
       ]
     },
@@ -83,60 +102,70 @@
       "order": 2,
       "startHour": 11,
       "endHour": 14,
+      "recipeGroupIds": [],
       "items": [
         {
           "id": "item_almoco_salada",
           "order": 0,
           "label": "Salada",
-          "displayName": "Salada de folhas, tomate, cenoura + azeite",
-          "displayQuantity": "À vontade",
           "isUnlimited": true,
-          "groupId": "lista_07"
+          "combinator": "AND",
+          "components": [
+            { "id": "comp_almoco_salada_alface",  "order": 0, "portionId": "food_l07_alface_americana" },
+            { "id": "comp_almoco_salada_tomate",  "order": 1, "portionId": "food_l08_tomate" },
+            { "id": "comp_almoco_salada_cenoura", "order": 2, "portionId": "food_l08_cenoura_crua_ralada" },
+            { "id": "comp_almoco_salada_azeite",  "order": 3, "name": "Azeite", "quantity": "à gosto" }
+          ]
         },
         {
           "id": "item_almoco_legumes",
           "order": 1,
           "label": "Legumes",
-          "displayName": "Legumes cozidos no vapor/refogados/assados",
-          "displayQuantity": "3 colheres de servir cheias (100-150g)",
           "isUnlimited": false,
-          "groupId": "lista_08"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_almoco_legumes", "order": 0, "portionId": "food_l08_brocolis_refogado" }
+          ]
         },
         {
           "id": "item_almoco_carboidrato",
           "order": 2,
           "label": "Carboidrato",
-          "displayName": "Arroz branco/integral OU batata cozida",
-          "displayQuantity": "5 colheres de sopa (100g) / 200g",
           "isUnlimited": false,
-          "groupId": "lista_06"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_almoco_carboidrato", "order": 0, "portionId": "food_l06_arroz_branco" }
+          ]
         },
         {
           "id": "item_almoco_leguminosa",
           "order": 3,
           "label": "Leguminosa",
-          "displayName": "Feijão",
-          "displayQuantity": "1 concha grande (100g)",
           "isUnlimited": false,
-          "groupId": "lista_02"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_almoco_leguminosa", "order": 0, "portionId": "food_l02_feijao_carioca_cozido" }
+          ]
         },
         {
           "id": "item_almoco_proteina",
           "order": 4,
           "label": "Proteína",
-          "displayName": "Filé de frango OU bife bovino",
-          "displayQuantity": "1 filé grande (130g)",
           "isUnlimited": false,
-          "groupId": "lista_01"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_almoco_proteina", "order": 0, "portionId": "food_l01_file_frango_grelhado" }
+          ]
         },
         {
           "id": "item_almoco_sobremesa",
           "order": 5,
           "label": "Sobremesa",
-          "displayName": "Laranja OU abacaxi",
-          "displayQuantity": "1 unidade / 2 fatias",
           "isUnlimited": false,
-          "groupId": "lista_03"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_almoco_sobremesa", "order": 0, "portionId": "food_l03_laranja" }
+          ]
         }
       ]
     },
@@ -146,42 +175,47 @@
       "order": 3,
       "startHour": 14,
       "endHour": 18,
+      "recipeGroupIds": ["recipe_group_sucos", "recipe_group_vitaminas"],
       "items": [
         {
           "id": "item_lanche_tarde_iogurte",
           "order": 0,
           "label": "Lácteo",
-          "displayName": "Iogurte natural desnatado OU iogurte grego light",
-          "displayQuantity": "1 pote (160g)",
           "isUnlimited": false,
-          "groupId": "lista_05"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_tarde_iogurte", "order": 0, "portionId": "food_l05_iogurte_natural_desnatado" }
+          ]
         },
         {
           "id": "item_lanche_tarde_fruta",
           "order": 1,
           "label": "Fruta",
-          "displayName": "Fruta",
-          "displayQuantity": "1 unidade",
           "isUnlimited": false,
-          "groupId": "lista_03"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_tarde_fruta", "order": 0, "portionId": "food_l03_banana" }
+          ]
         },
         {
           "id": "item_lanche_tarde_cereal",
           "order": 2,
           "label": "Cereal",
-          "displayName": "Aveia OU granola",
-          "displayQuantity": "1 colher de sopa",
           "isUnlimited": false,
-          "groupId": "lista_04"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_tarde_cereal", "order": 0, "portionId": "food_l04_aveia_flocos" }
+          ]
         },
         {
           "id": "item_lanche_tarde_whey",
           "order": 3,
           "label": "Suplemento",
-          "displayName": "Whey protein",
-          "displayQuantity": "1 dose",
           "isUnlimited": false,
-          "groupId": null
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_lanche_tarde_whey", "order": 0, "name": "Whey protein", "quantity": "1 dose" }
+          ]
         }
       ]
     },
@@ -191,60 +225,70 @@
       "order": 4,
       "startHour": 18,
       "endHour": 22,
+      "recipeGroupIds": ["recipe_group_jantar"],
       "items": [
         {
           "id": "item_jantar_salada",
           "order": 0,
           "label": "Salada",
-          "displayName": "Salada de folhas, tomate, cenoura + azeite",
-          "displayQuantity": "À vontade",
           "isUnlimited": true,
-          "groupId": "lista_07"
+          "combinator": "AND",
+          "components": [
+            { "id": "comp_jantar_salada_alface",  "order": 0, "portionId": "food_l07_alface_americana" },
+            { "id": "comp_jantar_salada_tomate",  "order": 1, "portionId": "food_l08_tomate" },
+            { "id": "comp_jantar_salada_cenoura", "order": 2, "portionId": "food_l08_cenoura_crua_ralada" },
+            { "id": "comp_jantar_salada_azeite",  "order": 3, "name": "Azeite", "quantity": "à gosto" }
+          ]
         },
         {
           "id": "item_jantar_legumes",
           "order": 1,
           "label": "Legumes",
-          "displayName": "Legumes cozidos no vapor/refogados/assados",
-          "displayQuantity": "3 colheres de servir cheias (100-150g)",
           "isUnlimited": false,
-          "groupId": "lista_08"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_jantar_legumes", "order": 0, "portionId": "food_l08_brocolis_refogado" }
+          ]
         },
         {
           "id": "item_jantar_carboidrato",
           "order": 2,
           "label": "Carboidrato",
-          "displayName": "Arroz branco/integral OU batata cozida",
-          "displayQuantity": "5 colheres de sopa (100g) / 200g",
           "isUnlimited": false,
-          "groupId": "lista_06"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_jantar_carboidrato", "order": 0, "portionId": "food_l06_arroz_branco" }
+          ]
         },
         {
           "id": "item_jantar_leguminosa",
           "order": 3,
           "label": "Leguminosa",
-          "displayName": "Feijão/Lentilha/Grão de bico",
-          "displayQuantity": "4 colheres de sopa (100g)",
           "isUnlimited": false,
-          "groupId": "lista_02"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_jantar_leguminosa", "order": 0, "portionId": "food_l02_feijao_carioca_cozido" }
+          ]
         },
         {
           "id": "item_jantar_proteina",
           "order": 4,
           "label": "Proteína",
-          "displayName": "Filé de frango grelhado OU carne moída OU ovos",
-          "displayQuantity": "120g ou 3 ovos",
           "isUnlimited": false,
-          "groupId": "lista_01"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_jantar_proteina", "order": 0, "portionId": "food_l01_file_frango_grelhado" }
+          ]
         },
         {
           "id": "item_jantar_sobremesa",
           "order": 5,
           "label": "Sobremesa",
-          "displayName": "Fruta de sobremesa ou gelatina zero",
-          "displayQuantity": "1 unidade",
           "isUnlimited": false,
-          "groupId": "lista_03"
+          "combinator": "OR",
+          "components": [
+            { "id": "comp_jantar_sobremesa", "order": 0, "portionId": "food_l03_laranja" }
+          ]
         }
       ]
     }
@@ -446,6 +490,238 @@
         { "id": "food_l10_requeijao", "foodName": "Requeijão", "quantity": "1 colher de sobremesa" },
         { "id": "food_l10_homus", "foodName": "Homus", "quantity": "1 colher de sobremesa" },
         { "id": "food_l10_manteiga", "foodName": "Manteiga", "quantity": "1 colher de sobremesa" }
+      ]
+    }
+  ],
+  "recipeGroups": [
+    {
+      "id": "recipe_group_sucos",
+      "name": "Sucos Verdes Nutritivos",
+      "recipes": [
+        {
+          "id": "recipe_suco_01",
+          "order": 0,
+          "title": "Suco — Opção 1",
+          "ingredients": [
+            { "id": "ing_s01_laranja",  "order": 0, "item": "suco de laranja", "quantity": "1 xícara" },
+            { "id": "ing_s01_abacaxi",  "order": 1, "item": "abacaxi",         "quantity": "1 fatia" },
+            { "id": "ing_s01_couve",    "order": 2, "item": "couve",           "quantity": "1 folha pequena" },
+            { "id": "ing_s01_gengibre", "order": 3, "item": "gengibre",        "quantity": "1 lasca" }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "recipe_suco_02",
+          "order": 1,
+          "title": "Suco — Opção 2",
+          "ingredients": [
+            { "id": "ing_s02_melancia",  "order": 0, "item": "melancia",    "quantity": "2 fatias" },
+            { "id": "ing_s02_agua_coco", "order": 1, "item": "água de coco", "quantity": "½ xícara" },
+            { "id": "ing_s02_hortela",   "order": 2, "item": "hortelã",     "quantity": "1 folha" }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "recipe_suco_03",
+          "order": 2,
+          "title": "Suco — Opção 3",
+          "ingredients": [
+            { "id": "ing_s03_maracuja",  "order": 0, "item": "maracujá",   "quantity": "1 unidade" },
+            { "id": "ing_s03_melao",     "order": 1, "item": "melão",      "quantity": "1 fatia média" },
+            { "id": "ing_s03_morango",   "order": 2, "item": "morangos",   "quantity": "4 unidades" },
+            { "id": "ing_s03_espinafre", "order": 3, "item": "espinafre",  "quantity": "2 folhas" },
+            { "id": "ing_s03_agua",      "order": 4, "item": "água",       "quantity": "150ml" }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "recipe_suco_04",
+          "order": 3,
+          "title": "Suco — Opção 4",
+          "ingredients": [
+            { "id": "ing_s04_couve",   "order": 0, "item": "couve",   "quantity": "1 folha" },
+            { "id": "ing_s04_abacaxi", "order": 1, "item": "abacaxi", "quantity": "1 rodela média" },
+            { "id": "ing_s04_hortela", "order": 2, "item": "hortelã", "quantity": "4 folhas" },
+            { "id": "ing_s04_agua",    "order": 3, "item": "água",    "quantity": "100ml" }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "recipe_suco_05",
+          "order": 4,
+          "title": "Suco — Opção 5",
+          "ingredients": [
+            { "id": "ing_s05_couve",   "order": 0, "item": "couve",            "quantity": "1 folha" },
+            { "id": "ing_s05_maracuja","order": 1, "item": "polpa de maracujá","quantity": "3 colheres de sopa" },
+            { "id": "ing_s05_cenoura", "order": 2, "item": "cenoura picada",   "quantity": "½ unidade" },
+            { "id": "ing_s05_agua",    "order": 3, "item": "água",             "quantity": "150ml" }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "recipe_suco_06",
+          "order": 5,
+          "title": "Suco — Opção 6 (suco rosa)",
+          "ingredients": [
+            { "id": "ing_s06_pitaia", "order": 0, "item": "pitaia",      "quantity": "1 unidade" },
+            { "id": "ing_s06_kiwi",   "order": 1, "item": "kiwi",        "quantity": "1 unidade" },
+            { "id": "ing_s06_abacaxi","order": 2, "item": "abacaxi",     "quantity": "1 fatia" },
+            { "id": "ing_s06_mamao",  "order": 3, "item": "mamão papaia","quantity": "¼ unidade" },
+            { "id": "ing_s06_agua",   "order": 4, "item": "água",        "quantity": "300ml" }
+          ],
+          "instructions": "Bater os ingredientes no liquidificador por 2-3 minutos. Se preferir, coe e sirva em seguida."
+        },
+        {
+          "id": "recipe_suco_07",
+          "order": 6,
+          "title": "Suco — Opção 7",
+          "ingredients": [
+            { "id": "ing_s07_brocolis", "order": 0, "item": "brócolis ou espinafre", "quantity": "1 pires" },
+            { "id": "ing_s07_couve",    "order": 1, "item": "couve",                 "quantity": "1 pires" },
+            { "id": "ing_s07_alface",   "order": 2, "item": "alface",               "quantity": "1 pires" },
+            { "id": "ing_s07_kiwi",     "order": 3, "item": "kiwi",                 "quantity": "4 unidades" },
+            { "id": "ing_s07_alecrim",  "order": 4, "item": "alecrim",              "quantity": "1 ramo" },
+            { "id": "ing_s07_hortela",  "order": 5, "item": "hortelã",              "quantity": "1 ramo" }
+          ],
+          "instructions": "Liquidificar com pouca água, coar e completar até 2 litros com suco de 2 limões espremidos e diluídos com água, ou suco de 3 laranjas."
+        }
+      ]
+    },
+    {
+      "id": "recipe_group_vitaminas",
+      "name": "Vitaminas",
+      "recipes": [
+        {
+          "id": "recipe_vitamina_01",
+          "order": 0,
+          "title": "Vitamina — Opção 1",
+          "ingredients": [
+            { "id": "ing_v01_banana", "order": 0, "item": "banana congelada",  "quantity": "1 unidade" },
+            { "id": "ing_v01_mamao",  "order": 1, "item": "mamão",             "quantity": "½ fatia" },
+            { "id": "ing_v01_leite",  "order": 2, "item": "leite desnatado",   "quantity": "200ml" }
+          ],
+          "instructions": "Bater os ingredientes no liquidificador. Leite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
+        },
+        {
+          "id": "recipe_vitamina_02",
+          "order": 1,
+          "title": "Vitamina — Opção 2",
+          "ingredients": [
+            { "id": "ing_v02_abacate", "order": 0, "item": "abacate",        "quantity": "½ unidade" },
+            { "id": "ing_v02_aveia",   "order": 1, "item": "aveia",          "quantity": "1 colher de sopa" },
+            { "id": "ing_v02_leite",   "order": 2, "item": "leite desnatado","quantity": "200ml" }
+          ],
+          "instructions": "Bater os ingredientes no liquidificador. Leite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
+        },
+        {
+          "id": "recipe_vitamina_03",
+          "order": 2,
+          "title": "Vitamina — Opção 3",
+          "ingredients": [
+            { "id": "ing_v03_banana",  "order": 0, "item": "banana congelada", "quantity": "1 unidade" },
+            { "id": "ing_v03_morango", "order": 1, "item": "morangos",          "quantity": "3 unidades" },
+            { "id": "ing_v03_maca",    "order": 2, "item": "maçã",              "quantity": "½ unidade" },
+            { "id": "ing_v03_leite",   "order": 3, "item": "leite de coco",     "quantity": "200ml" }
+          ],
+          "instructions": "Bater os ingredientes no liquidificador. Leite: pode variar com iogurtes naturais OU bebida vegetal OU água de coco integral."
+        }
+      ]
+    },
+    {
+      "id": "recipe_group_jantar",
+      "name": "Sugestões de Jantar",
+      "recipes": [
+        {
+          "id": "recipe_jantar_wrap_carne_moida",
+          "order": 0,
+          "title": "Wrap de Carne Moída",
+          "ingredients": [
+            { "id": "ing_wrap_rap10",    "order": 0, "item": "rap10®",                      "quantity": "1 unidade" },
+            { "id": "ing_wrap_carne",    "order": 1, "item": "carne moída refogada",         "quantity": "3 colheres de sopa cheias" },
+            { "id": "ing_wrap_alface",   "order": 2, "item": "alface americana cortada em tiras", "quantity": "2 a 3 folhas" },
+            { "id": "ing_wrap_tomate",   "order": 3, "item": "tomate ou pepino",             "quantity": "2 fatias" },
+            { "id": "ing_wrap_cenoura",  "order": 4, "item": "cenoura pequena crua ralada",  "quantity": "½ unidade" },
+            { "id": "ing_wrap_temperos", "order": 5, "item": "orégano e sal",                "quantity": "à gosto" }
+          ],
+          "instructions": "Em uma frigideira, grelhe os 2 lados da tortilha até dourar levemente. Coloque em um prato, acrescente os demais ingredientes e enrole o wrap."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_caipira",
+          "order": 1,
+          "title": "Sanduíche Caipira",
+          "ingredients": [
+            { "id": "ing_caipira_pao",      "order": 0, "item": "pão francês integral ou pão de forma integral", "quantity": "1 unidade ou 2 fatias" },
+            { "id": "ing_caipira_frango",   "order": 1, "item": "frango desfiado",            "quantity": "4 colheres de sopa cheias" },
+            { "id": "ing_caipira_milho",    "order": 2, "item": "milho-verde",                "quantity": "1 colher de sopa" },
+            { "id": "ing_caipira_cenoura",  "order": 3, "item": "cenoura ralada",             "quantity": "1 colher de sopa" },
+            { "id": "ing_caipira_salsinha", "order": 4, "item": "salsinha picada",            "quantity": "1 colher de chá" },
+            { "id": "ing_caipira_requeijao","order": 5, "item": "requeijão light",            "quantity": "1 colher de sobremesa rasa" },
+            { "id": "ing_caipira_alface",   "order": 6, "item": "alface americana em tiras",  "quantity": "à gosto" },
+            { "id": "ing_caipira_tomate",   "order": 7, "item": "tomate",                     "quantity": "2 fatias" },
+            { "id": "ing_caipira_sal",      "order": 8, "item": "sal",                        "quantity": "à gosto" }
+          ],
+          "instructions": "Misture os ingredientes, com exceção das folhas de alface. Recheie o sanduíche com a pasta e acrescente alface."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_atum_sardinha",
+          "order": 2,
+          "title": "Sanduíche de Atum ou Sardinha",
+          "ingredients": [
+            { "id": "ing_atum_pao",      "order": 0, "item": "pão integral",                       "quantity": "2 fatias" },
+            { "id": "ing_atum_peixe",    "order": 1, "item": "atum ralado ou sardinha de lata",     "quantity": "3 colheres de sopa ou 2 sardinhas" },
+            { "id": "ing_atum_requeijao","order": 2, "item": "requeijão light",                     "quantity": "1 colher de sopa" },
+            { "id": "ing_atum_alface",   "order": 3, "item": "alface",                             "quantity": "à gosto" },
+            { "id": "ing_atum_cenoura",  "order": 4, "item": "cenoura crua ralada",                "quantity": "2 colheres de sopa" },
+            { "id": "ing_atum_palmito",  "order": 5, "item": "palmito cortado em cubos pequenos",  "quantity": "1 unidade" },
+            { "id": "ing_atum_temperos", "order": 6, "item": "orégano e cebolinha",                "quantity": "à gosto" }
+          ],
+          "instructions": "Misture os ingredientes, com exceção das folhas de alface. Recheie o sanduíche com a pasta e acrescente alface."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_queijo_branco",
+          "order": 3,
+          "title": "Sanduíche de Queijo Branco",
+          "ingredients": [
+            { "id": "ing_queijo_queijo",  "order": 0, "item": "queijo minas",                           "quantity": "2 fatias" },
+            { "id": "ing_queijo_pao",     "order": 1, "item": "pão de forma integral ou rap10®",        "quantity": "2 fatias ou 1 unidade" },
+            { "id": "ing_queijo_molho",   "order": 2, "item": "molho de mostarda com azeite e mel",     "quantity": "1 colher de sobremesa rasa" },
+            { "id": "ing_queijo_alface",  "order": 3, "item": "alface",                                 "quantity": "à gosto" },
+            { "id": "ing_queijo_tomate",  "order": 4, "item": "tomate ou pepino",                       "quantity": "2 fatias" },
+            { "id": "ing_queijo_cenoura", "order": 5, "item": "cenoura crua ralada",                    "quantity": "½ unidade" },
+            { "id": "ing_queijo_oregano", "order": 6, "item": "orégano",                                "quantity": "à gosto" }
+          ],
+          "instructions": "Misture os ingredientes, com exceção das folhas de alface, tomate e queijo. Recheie o sanduíche com a pasta e acrescente alface, tomate e queijo."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_pasta_ovo_legumes",
+          "order": 4,
+          "title": "Sanduíche com Pasta de Ovo e Legumes",
+          "ingredients": [
+            { "id": "ing_ovo_pao",      "order": 0, "item": "pão francês integral ou pão de forma integral", "quantity": "1 unidade ou 2 fatias" },
+            { "id": "ing_ovo_ovo",      "order": 1, "item": "ovo cozido descascado",                         "quantity": "1 unidade" },
+            { "id": "ing_ovo_milho",    "order": 2, "item": "milho-verde",                                    "quantity": "1 colher de sopa" },
+            { "id": "ing_ovo_cenoura",  "order": 3, "item": "cenoura ralada",                                 "quantity": "1 colher de sopa" },
+            { "id": "ing_ovo_salsinha", "order": 4, "item": "salsinha picada",                                "quantity": "1 colher de chá" },
+            { "id": "ing_ovo_maionese", "order": 5, "item": "maionese light",                                 "quantity": "1 colher de sobremesa rasa" },
+            { "id": "ing_ovo_alface",   "order": 6, "item": "alface americana em tiras",                      "quantity": "à gosto" },
+            { "id": "ing_ovo_pepino",   "order": 7, "item": "pepino",                                         "quantity": "2 fatias" },
+            { "id": "ing_ovo_sal",      "order": 8, "item": "sal",                                            "quantity": "à gosto" }
+          ],
+          "instructions": "Em uma tigela, amasse o ovo com um garfo até formar uma pasta. Acrescente os demais ingredientes, com exceção das folhas de alface e o tomate, e misture bem. Recheie o sanduíche com a pasta e acrescente alface e tomate."
+        },
+        {
+          "id": "recipe_jantar_sanduiche_hamburguer_caseiro",
+          "order": 5,
+          "title": "Sanduíche com Hambúrguer Caseiro",
+          "ingredients": [
+            { "id": "ing_burger_pao",    "order": 0, "item": "pão integral ou pão de hambúrguer",    "quantity": "2 fatias ou 1 unidade" },
+            { "id": "ing_burger_carne",  "order": 1, "item": "hambúrguer de patinho ou acém moído",  "quantity": "90g" },
+            { "id": "ing_burger_queijo", "order": 2, "item": "creme de ricota ou mussarela",         "quantity": "1 colher de sopa ou 1 fatia" },
+            { "id": "ing_burger_folhas", "order": 3, "item": "alface e agrião ou rúcula",            "quantity": "à gosto" },
+            { "id": "ing_burger_tomate", "order": 4, "item": "tomate",                               "quantity": "3 fatias" }
+          ],
+          "instructions": null
+        }
       ]
     }
   ]
