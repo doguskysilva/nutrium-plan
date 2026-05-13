@@ -4,6 +4,11 @@
   "id": "plan_douglas_2026_itsvida",
   "name": "Plano Alimentar - Douglas",
   "updatedAt": "2026-04-24",
+  "nutritionist": {
+    "name": "Ana Carvalho",
+    "crn": "CRN 4 · 12345"
+  },
+  "versionDescription": "Plano inicial após consulta presencial.",
   "meals": [
     {
       "id": "meal_cafe_manha",
