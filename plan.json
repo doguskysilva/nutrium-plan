@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "planVersion": 3,
+  "planVersion": 4,
   "id": "plan_douglas_2026_itsvida",
   "name": "Plano Alimentar - Douglas",
-  "updatedAt": "2026-04-24",
+  "updatedAt": "2026-05-13",
   "nutritionist": {
     "name": "Ana Carvalho",
     "crn": "CRN 4 · 12345"
