@@ -506,7 +506,7 @@
         {
           "id": "recipe_suco_01",
           "order": 0,
-          "title": "Suco — Opção 1",
+          "title": "Suco Verde Laranja & Gengibre",
           "ingredients": [
             { "id": "ing_s01_laranja",  "order": 0, "item": "suco de laranja", "quantity": "1 xícara" },
             { "id": "ing_s01_abacaxi",  "order": 1, "item": "abacaxi",         "quantity": "1 fatia" },
@@ -518,7 +518,7 @@
         {
           "id": "recipe_suco_02",
           "order": 1,
-          "title": "Suco — Opção 2",
+          "title": "Suco de Melancia com Coco",
           "ingredients": [
             { "id": "ing_s02_melancia",  "order": 0, "item": "melancia",    "quantity": "2 fatias" },
             { "id": "ing_s02_agua_coco", "order": 1, "item": "água de coco", "quantity": "½ xícara" },
@@ -529,7 +529,7 @@
         {
           "id": "recipe_suco_03",
           "order": 2,
-          "title": "Suco — Opção 3",
+          "title": "Suco Tropical com Espinafre",
           "ingredients": [
             { "id": "ing_s03_maracuja",  "order": 0, "item": "maracujá",   "quantity": "1 unidade" },
             { "id": "ing_s03_melao",     "order": 1, "item": "melão",      "quantity": "1 fatia média" },
@@ -542,7 +542,7 @@
         {
           "id": "recipe_suco_04",
           "order": 3,
-          "title": "Suco — Opção 4",
+          "title": "Suco Verde Abacaxi & Hortelã",
           "ingredients": [
             { "id": "ing_s04_couve",   "order": 0, "item": "couve",   "quantity": "1 folha" },
             { "id": "ing_s04_abacaxi", "order": 1, "item": "abacaxi", "quantity": "1 rodela média" },
@@ -554,7 +554,7 @@
         {
           "id": "recipe_suco_05",
           "order": 4,
-          "title": "Suco — Opção 5",
+          "title": "Suco Verde Maracujá & Cenoura",
           "ingredients": [
             { "id": "ing_s05_couve",   "order": 0, "item": "couve",            "quantity": "1 folha" },
             { "id": "ing_s05_maracuja","order": 1, "item": "polpa de maracujá","quantity": "3 colheres de sopa" },
@@ -566,7 +566,7 @@
         {
           "id": "recipe_suco_06",
           "order": 5,
-          "title": "Suco — Opção 6 (suco rosa)",
+          "title": "Suco Rosa de Pitaia",
           "ingredients": [
             { "id": "ing_s06_pitaia", "order": 0, "item": "pitaia",      "quantity": "1 unidade" },
             { "id": "ing_s06_kiwi",   "order": 1, "item": "kiwi",        "quantity": "1 unidade" },
@@ -579,7 +579,7 @@
         {
           "id": "recipe_suco_07",
           "order": 6,
-          "title": "Suco — Opção 7",
+          "title": "Suco Verde Detox",
           "ingredients": [
             { "id": "ing_s07_brocolis", "order": 0, "item": "brócolis ou espinafre", "quantity": "1 pires" },
             { "id": "ing_s07_couve",    "order": 1, "item": "couve",                 "quantity": "1 pires" },
@@ -599,7 +599,7 @@
         {
           "id": "recipe_vitamina_01",
           "order": 0,
-          "title": "Vitamina — Opção 1",
+          "title": "Vitamina Banana & Mamão",
           "ingredients": [
             { "id": "ing_v01_banana", "order": 0, "item": "banana congelada",  "quantity": "1 unidade" },
             { "id": "ing_v01_mamao",  "order": 1, "item": "mamão",             "quantity": "½ fatia" },
@@ -610,7 +610,7 @@
         {
           "id": "recipe_vitamina_02",
           "order": 1,
-          "title": "Vitamina — Opção 2",
+          "title": "Vitamina de Abacate com Aveia",
           "ingredients": [
             { "id": "ing_v02_abacate", "order": 0, "item": "abacate",        "quantity": "½ unidade" },
             { "id": "ing_v02_aveia",   "order": 1, "item": "aveia",          "quantity": "1 colher de sopa" },
@@ -621,7 +621,7 @@
         {
           "id": "recipe_vitamina_03",
           "order": 2,
-          "title": "Vitamina — Opção 3",
+          "title": "Vitamina Banana & Morango",
           "ingredients": [
             { "id": "ing_v03_banana",  "order": 0, "item": "banana congelada", "quantity": "1 unidade" },
             { "id": "ing_v03_morango", "order": 1, "item": "morangos",          "quantity": "3 unidades" },
